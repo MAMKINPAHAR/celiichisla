@@ -84,8 +84,9 @@ if (test==test1):
     else:
         print('Введите число строго от 1 до 10!')
     datetime2=datetime.now().time()
+    ll=verotv*100/a
     print("Время конца тестирования:",datetime2)
-    print("Количество правильных ответов:",verotv," из ", a)
+    print("Количество правильных ответов:",verotv," из ", a,", а это ",ll,"% из 100%!")
     result = []
 
 #Контрольный режим
@@ -126,7 +127,9 @@ elif (test==test2):
                 if uchotvet==per10_2(ss):
                     verotv += 1 
     datetime2=datetime.now().time()
+    ll=verotv*100/a
     print("Время конца тестирования:",datetime2)
-    print("Количество правильных ответов:",verotv," из ", a)
+    print("Количество правильных ответов:",verotv," из ", a,", а это ",ll,"% из 100%!")
 else:
     print("Выбрать режим можно только поставив цифру 1-Тренировочный или 2-Контрольный")
+
